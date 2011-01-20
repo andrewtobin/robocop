@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="conferenceheading">Conferences</string>
+    <string name="app_name">Open Conference</string>
+<string name="currentlyat">currently at...</string>
+<string name="currentconferencename">Demo Conference</string>
+<string name="currentconferencedescription">No description found</string>
+<string name="newsheading">latest news</string>
+<string name="conferencewebsite">Conference Website</string>
+<string name="newconferenceheading">add new</string>
+<string name="historyheading">history</string>
+<string name="nearmeheading">near me</string>
+<string name="trendingheading">trending</string>
+</resources>
