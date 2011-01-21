@@ -25,8 +25,8 @@ public class MockConferenceRepository {
 		Session first = new Session(
 				"WEB304",
 	            "All about jQuery",
-	            new Date("1287224100000"),
-	            new Date("1287225900000"),
+	            null,
+	            null,
 	            "Room G04",
 	            "Let\u0027s talk about how awesome jQuery is and how much we all love it.");
 
@@ -57,8 +57,8 @@ public class MockConferenceRepository {
 		Session second = new Session(
 				"WEB306",
 		        "Even Faster Websites",
-	            new Date("1287224100000"),
-	            new Date("1287225900000"),
+	            null, //new Date("1287224100000"),
+	            null, //new Date("1287225900000"),
 	            "Room G06",
 	            "Let\u0027s make our websites fast.");
 

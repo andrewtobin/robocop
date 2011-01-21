@@ -18,6 +18,14 @@
 	    android:textSize="24dip"
 	    android:textColor="#FFFFFF"
 	    />
+	<ListView
+		android:id="@+id/historylist"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="fill_vertical" 
+        android:choiceMode="singleChoice"
+        android:clickable="true" 
+		/>
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="50dip"

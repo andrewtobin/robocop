@@ -18,6 +18,11 @@ public class MainActivity extends TouchActivity {
 		startActivity(new Intent(MainActivity.this, NewsActivity.class));
     }
     
+    @Override
+    public void FlingLeftToRight()
+    {
+    }
+    
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
