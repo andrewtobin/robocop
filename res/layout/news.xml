@@ -1,59 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
-  	<TextView  
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    android:text="@string/conferenceheading"
-	    android:textSize="48dip"
-	    android:textColor="#FFFFFF"
-	    />
-   	<TextView  
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    android:text="@string/newsheading"
-	    android:textSize="24dip"
-	    android:textColor="#FFFFFF"
-	    />
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="50dip"
-		android:orientation="horizontal"
-		android:layout_gravity="bottom"
-		android:background="#FFFFFF"
-		android:padding="2dip">
-		<TextView
-			android:background="#000000"
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1" />
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1"
-			android:background="#FFFFFF" />
-		<TextView
-			android:background="#000000"
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1" />
-		<TextView
-			android:background="#000000"
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1" />
-		<TextView
-			android:background="#000000"
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1" />
-		<TextView
-			android:background="#000000"
-			android:layout_width="wrap_content"
-			android:layout_height="fill_parent"
-			android:layout_weight="1" />
-	</LinearLayout>
-</LinearLayout>
+<RelativeLayout
+    android:id="@+id/RLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:id="@+id/mainpanel"
+		android:layout_above="@+id/menupanel"
+		android:layout_alignParentLeft="true"
+	    >
+	  	<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/conferenceheading"
+		    android:textSize="48dip"
+		    android:textColor="#FFFFFF"
+		    />
+	   	<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/newsheading"
+		    android:textSize="24dip"
+		    android:textColor="#FFFFFF"
+		  	/>
+	</LinearLayout>		  	
+	<include
+        layout="@layout/menu"
+		/>
+</RelativeLayout>

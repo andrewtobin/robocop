@@ -31,7 +31,9 @@ public class HistoryActivity extends TouchActivity {
     @Override
     public void FlingRightToLeft()
     {
-		startActivity(new Intent(HistoryActivity.this, NearMeActivity.class));
+    	Intent i = new Intent(HistoryActivity.this, NearMeActivity.class);
+    	i.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+		startActivity(i);
     }
     
     List<Conference> conferences;

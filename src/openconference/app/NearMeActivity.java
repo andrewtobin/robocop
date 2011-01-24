@@ -11,6 +11,8 @@ public class NearMeActivity extends TouchActivity {
     @Override
     public void FlingRightToLeft()
     {
-		startActivity(new Intent(NearMeActivity.this, TrendingActivity.class));
+    	Intent i = new Intent(NearMeActivity.this, TrendingActivity.class);
+    	i.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+		startActivity(i);
     }
 }    
